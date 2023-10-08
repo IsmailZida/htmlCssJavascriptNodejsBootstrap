@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME</title>
+        <link href="Home.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <div class="logo">
+                <h2 class="icon">SGConstruction</h2>
+            </div>
+            <div class="menu">
+            <ul id="menu">
+                <li class="slide"><a href="#">Home</a>
+                    <ul>
+                        <li><a href="#">List1</a></li>
+                        <li><a href="#">List2</a></li>
+                        <li><a href="#">List3</a></li>
+                    </ul>
+                </li>
+                <li class="slide"><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">List1</a></li>
+                        <li><a href="#">List2</a></li>
+                        <li><a href="#">List3</a></li>
+                    </ul>
+                </li>
+                <li class="slide"><a href="#">Design</a>
+                    <ul>
+                        <li><a href="#">List1</a></li>
+                        <li><a href="#">List2</a></li>
+                        <li><a href="#">List3</a></li>
+                    </ul>
+                </li>
+                <li class="slide"><a href="#">Planning</a>
+                    <ul>
+                        <li><a href="#">List1</a></li>
+                        <li><a href="#">List2</a></li>
+                        <li><a href="#">List3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <script>
+            $(".slide a").click((event)=>
+            {
+                $(event.target).parent().find("ul").slideToggle();
+            });
+        </script>
+
+    </body>
+    
+    
+</html>
